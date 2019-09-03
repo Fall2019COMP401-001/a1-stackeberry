@@ -18,7 +18,7 @@ public class A1Novice {
 		
 		String[] lastNames = new String[count];
 		
-		double[] totalPrices = new double[count];
+		String[] totalPrices = new String[count];
 		
 		// loop through each customer
 		for (int i=0; i<firstInitials.length; i++) {
@@ -35,11 +35,10 @@ public class A1Novice {
 				var name = scan.next();
 				double pricePer = scan.nextDouble();
 				totalPrice = totalPrice + (amount * pricePer);
-				String.format("%.2f, totalPrice");
-
 				
+
 			}
-			totalPrices[i] = totalPrice;
+			totalPrices[i] = String.format("%.2f", totalPrice);
 		}
 		
 		// Print out each customer's first initial
