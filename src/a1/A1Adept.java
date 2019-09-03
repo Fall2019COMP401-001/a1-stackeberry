@@ -103,10 +103,11 @@ public class A1Adept {
 	
 	static int idxOfSmallest(double[] costs) {
 		int idx = 0;
-		double small = 0;
+		double small = costs[0];
 		for (int i = 0; i < costs.length; i++) {
 			if (costs[i] < small) {
 				idx = i;
+				small = costs[i];
 			}
 		}
 		return idx;
