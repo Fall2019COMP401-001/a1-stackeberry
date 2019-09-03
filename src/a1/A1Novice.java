@@ -35,6 +35,8 @@ public class A1Novice {
 				var name = scan.next();
 				double pricePer = scan.nextDouble();
 				totalPrice = totalPrice + (amount * pricePer);
+				String.format("%.2f, totalPrice");
+
 				
 			}
 			totalPrices[i] = totalPrice;
